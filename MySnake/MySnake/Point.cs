@@ -12,6 +12,17 @@ namespace MySnake
         public int y;
         public char symbol;
 
+        public Point()
+        {
+
+        }
+        public Point(int _x, int _y, char _symbol)
+        {
+            x = _x;
+            y = _y;
+            symbol = _symbol;
+        }
+
         /// <summary>
         /// Рисует символ в определенной позиции с координатами x,y
         /// </summary>
@@ -23,5 +34,6 @@ namespace MySnake
             Console.SetCursorPosition(x, y);
             Console.Write(symbol);
         }
+
     }
 }
